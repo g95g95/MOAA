@@ -268,7 +268,9 @@ index e69de29..4b825dc 100644
 +export function greet(name: string): string {
 +  return `Hello, ${name}!`;
 +}
+```
 
+---
 
 # Best Practice
 1. First think through the problem, read the codebase for relevant files, and write a plan to tasks/todo.md.
