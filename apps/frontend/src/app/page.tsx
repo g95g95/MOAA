@@ -1,6 +1,3 @@
-'use client';
-
-import { useState } from 'react';
 import Link from 'next/link';
 
 export default function HomePage() {
@@ -89,8 +86,8 @@ export default function HomePage() {
                   </div>
                   <h3 className="mt-4 text-lg font-medium text-gray-900">Describe Your Change</h3>
                   <p className="mt-2 text-base text-gray-500">
-                    Write what you want in natural language. "Add a dark mode toggle" or "Fix the
-                    login validation bug."
+                    Write what you want in natural language. &quot;Add a dark mode toggle&quot; or &quot;Fix the
+                    login validation bug.&quot;
                   </p>
                 </div>
 

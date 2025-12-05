@@ -1,6 +1,13 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { PrismaService } from '../../common/prisma.service';
-import { UserResponse, UpdateUserDto } from '@moaa/shared';
+import { UserResponse, UpdateUserDto, UserRole } from '@moaa/shared';
+
+interface UserRecord {
+  id: string;
+  email: string;
+  name: string;
+  role: UserRole;
+}
 
 @Injectable()
 export class UsersService {
@@ -42,7 +49,7 @@ export class UsersService {
       orderBy: { createdAt: 'desc' },
     });
 
-    return users.map((user) => ({
+    return users.map((user: UserRecord) => ({
       id: user.id,
       email: user.email,
       name: user.name,

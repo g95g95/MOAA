@@ -7,7 +7,7 @@ export async function processChangeRequest(
   data: ChangeRequestJobData,
   prisma: PrismaClient
 ): Promise<void> {
-  const { changeRequestId, projectId, description, repositoryUrl, defaultBranch } = data;
+  const { changeRequestId, description, repositoryUrl, defaultBranch } = data;
 
   try {
     await prisma.changeRequest.update({
