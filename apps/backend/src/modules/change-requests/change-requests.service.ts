@@ -3,7 +3,6 @@ import { PrismaService } from '../../common/prisma.service';
 import { QueueService } from './queue.service';
 import {
   CreateChangeRequestDto,
-  UpdateChangeRequestDto,
   ChangeRequestResponse,
   ChangeRequestListResponse,
   ChangeRequestStatus,
